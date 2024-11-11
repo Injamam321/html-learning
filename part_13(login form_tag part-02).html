@@ -1,0 +1,84 @@
+
+<!-- <label> এবং <input> ট্যাগ সাধারণত HTML ফর্মের ইনপুট ফিল্ডগুলোকে উল্লেখ এবং স্টাইল করতে ব্যবহৃত হয়। <label> ট্যাগটি একটি ইনপুট ফিল্ডের সাথে যুক্ত করার জন্য ব্যবহৃত হয়, যা ফর্ম পূরণের সময় ব্যবহারকারীদের জন্য বুঝতে সহজ করে। এটি "for" অ্যাট্রিবিউটের মাধ্যমে নির্দিষ্ট <input> এর আইডির সাথে যুক্ত হয়। উদাহরণ:
+
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">
+
+এখানে <label> ট্যাগটি "Username" ইনপুট ফিল্ডের জন্য নির্দিষ্ট নির্দেশিকা প্রদান করছে। -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form style="width: 600px; margin: auto;">
+
+
+        <fieldset>
+
+            <legend>Personal Info</legend><br>
+
+        <label for="first-name">First Name</label> <br>
+        <input type="text" name="first_name" id ="first-name" required > <br><br>
+
+        <label for="last-name">Last Name</label> <br>
+        <input type="text" name="last_name" id ="last-name" required> <br><br>
+
+        <label for="pasword"> Password</label><br>
+        <input type="password" name="password_create" id="pasword" required><br><br>
+
+        <label for="email">Email:</label> <br>
+        <input type="email" id="email" name="email" required><br><br>
+    
+        <label for="url">Website:</label><br>
+        <input type="url" id="url" name="url" required><br><br>
+
+        <label for="birthday"> Date of Birth:</label><br>
+        <input type="date" id="birthday" name="birthday" required><br><br>
+
+        <label for="file">Upload your file </label><br>
+        <input type="file" name="file" id="file"> <br> <br>
+
+        Gender <br>
+        <input type="radio" name="gender" id="Male"> <label for="Male"> Male </label><br>
+        <input type="radio" name="gender" id="Female"> <label for="Female"> Female </label><br><br>
+
+        <label for="favcolor">Favorite Color:</label><br>
+        <input type="color" id="favcolor" name="favcolor"><br><br>
+
+        Search Your Country <br>
+        <select name="country" id="">
+
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="India">India</option>
+            <option value="Pakistan" selected>Pakistan</option>
+            <option value="Japan">Japan</option>
+            <option value="Chaina">Chaina</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Vutan">Vutan</option>
+
+        </select><br><br> 
+    
+        <label for="range">Volume:</label><br>
+        1<input type="range" id="range" name="volume" min="0"max="100">100<br><br>
+
+        Masseges here: <br>
+        <textarea name="name_area" cols="30" rows="10" placeholder="write something"> </textarea><br><br>
+
+    
+        
+    
+        <input type="submit" value="Submit">
+        <input type="Reset" value="Reset">
+
+    </fieldset>
+
+    </form>
+    
+</body>
+</html>
